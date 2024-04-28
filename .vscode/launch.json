@@ -1,0 +1,27 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "debug current file",
+      "runtimeArgs": ["--nolazy", "--loader", "ts-node/esm"],
+      "args": ["${file}", "--transpile-only"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"],
+      "env": { "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json" }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "runtimeArgs": ["--loader", "ts-node/esm"],
+      "args": ["${workspaceFolder}/src/index.ts"], // ["${file}"],
+      "env": { "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json" }
+    }
+  ]
+}

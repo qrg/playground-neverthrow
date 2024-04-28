@@ -1,0 +1,43 @@
+{
+  "name": "boilerplate-typescript",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "qrg",
+    "url": "https://github.com/qrg"
+  },
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": "20.12.2"
+  },
+  "private": true,
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "lint": "run-s --print-label type-check lint:eslint lint:prettier",
+    "lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,md,yml,yaml,html,json}'",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@typescript-eslint/eslint-plugin": "7.7.1",
+    "@typescript-eslint/parser": "7.7.1",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "17.3.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-unicorn": "52.0.0",
+    "eslint-plugin-vitest": "0.4.1",
+    "npm-run-all2": "6.1.2",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5",
+    "vitest": "1.5.2"
+  }
+}
