@@ -33,7 +33,7 @@
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-n": "17.21.0",
     "eslint-plugin-promise": "6.6.0",
-    "eslint-plugin-unicorn": "52.0.0",
+    "eslint-plugin-unicorn": "60.0.0",
     "eslint-plugin-vitest": "0.4.1",
     "npm-run-all2": "6.2.6",
     "prettier": "3.6.2",
