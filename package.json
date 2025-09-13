@@ -10,7 +10,7 @@
   "type": "module",
   "packageManager": "pnpm@9.15.9",
   "engines": {
-    "node": "20.19.5"
+    "node": "22.19.0"
   },
   "private": true,
   "scripts": {
@@ -24,7 +24,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/node": "20.19.13",
+    "@types/node": "22.18.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
